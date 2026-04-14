@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-serif { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
+.font-serif { font-family: 'Playfair Display', Georgia, serif; }
 .font-sans { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
 
 /* Hero background: subtle gradient over photo placeholder */
