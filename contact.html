@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact MDC Home Services | Request a Visit | Main Line &amp; Jersey Shore</title>
+<meta name="description" content="Request a walkthrough with MDC Home Services. Premium remodeling and home care for the Main Line and Jersey Shore. Based in Malvern, PA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { theme: { extend: { colors: { navy: { 900: '#122950', 800: '#1B3A6B', 700: '#2a4f8a' }, brass: { 500: '#B8922A', 600: '#9A7A1E', 400: '#D4A843' }, cream: '#F8F5EF', ink: '#1A1A1A', muted: '#4A4540', warmgray: '#E8E2D9' }, fontFamily: { serif: ['Playfair Display', 'Georgia', 'serif'], sans: ['DM Sans', 'system-ui', 'sans-serif'] }, borderRadius: { 'btn': '6px' } } } }</script>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="font-sans text-ink bg-cream antialiased">
+
+<header class="bg-cream border-b-[3px] border-brass-500 sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="index.html" class="font-serif text-2xl font-semibold text-navy-900">MDC <span class="text-brass-500">Home Services</span></a>
+    <nav class="desktop-nav hidden lg:flex items-center gap-8 text-sm font-medium">
+      <a href="home-care-plan.html" class="text-ink hover:text-brass-600">Home Care Plan</a>
+      <a href="projects.html" class="text-ink hover:text-brass-600">The Work</a>
+      <a href="about.html" class="text-ink hover:text-brass-600">About</a>
+      <a href="contact.html" class="text-brass-600">Contact</a>
+    </nav>
+    <a href="tel:4849191878" class="hidden sm:inline-block bg-navy-900 text-cream px-5 py-3 text-sm font-semibold hover:bg-navy-800 rounded-btn">Call 484-919-1878</a>
+    <button class="mobile-nav-toggle lg:hidden text-navy-900" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="lg:hidden border-t border-warmgray bg-cream">
+    <nav class="px-6 py-4 flex flex-col gap-3 text-sm font-medium">
+      <a href="home-care-plan.html" class="py-2">Home Care Plan</a>
+      <a href="projects.html" class="py-2">The Work</a>
+      <a href="about.html" class="py-2">About</a>
+      <a href="contact.html" class="py-2">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-bg text-cream">
+  <div class="max-w-5xl mx-auto px-6 py-20 lg:py-24">
+    <div class="text-xs uppercase tracking-widest text-brass-500 mb-4">Contact</div>
+    <h1 class="font-serif text-5xl lg:text-6xl font-semibold leading-tight mb-4">Let's Talk About Your House.</h1>
+    <p class="text-lg text-cream/85 max-w-2xl">Tell us what you need. We'll be in touch within one business day to set up a walkthrough.</p>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-3 gap-12">
+    <!-- Form -->
+    <div class="lg:col-span-2 bg-white border border-warmgray p-8 lg:p-12">
+      <h2 class="font-serif text-3xl text-navy-900 font-semibold mb-2">Request a Visit</h2>
+      <p class="text-muted mb-8">One walkthrough. No pressure. If we're not the right fit, we'll tell you.</p>
+
+      <form action="https://formspree.io/f/maqaykey" method="POST" class="space-y-5">
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-xs uppercase tracking-widest text-muted mb-2">Name</label>
+            <input type="text" name="name" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white">
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-widest text-muted mb-2">Phone</label>
+            <input type="tel" name="phone" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white">
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-widest text-muted mb-2">Email</label>
+          <input type="email" name="email" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white">
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-xs uppercase tracking-widest text-muted mb-2">Property Location</label>
+            <select name="location" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white">
+              <option value="">Select...</option>
+              <option>Main Line, PA</option>
+              <option>Avalon, NJ</option>
+              <option>Stone Harbor, NJ</option>
+              <option>Sea Isle City, NJ</option>
+              <option>Ocean City, NJ</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs uppercase tracking-widest text-muted mb-2">Service Interest</label>
+            <select name="service" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white">
+              <option value="">Select...</option>
+              <option>Home Care Plan</option>
+              <option>Remodeling / Renovation</option>
+              <option>Bathroom</option>
+              <option>Finished Basement</option>
+              <option>Deck / Outdoor</option>
+              <option>Handyman</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-widest text-muted mb-2">Tell us about your project</label>
+          <textarea name="message" rows="5" required class="w-full border border-ink/20 px-4 py-3 bg-cream/50 focus:bg-white" placeholder="What are you thinking? Timeline? Any specifics we should know?"></textarea>
+        </div>
+        <button type="submit" class="bg-navy-900 text-cream px-8 py-4 font-semibold hover:bg-navy-800 rounded-btn">
+          Send Request →
+        </button>
+        <p class="text-xs text-muted">We'll be in touch within one business day. No spam, no mailing list.</p>
+      </form>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="space-y-6">
+      <div class="bg-navy-900 text-cream p-8">
+        <div class="text-brass-500 text-xs uppercase tracking-widest mb-4">Call or text</div>
+        <a href="tel:4849191878" class="font-serif text-3xl text-cream block mb-1">484-919-1878</a>
+        <p class="text-cream/70 text-sm">Mon–Fri 8am–6pm, Sat 9am–2pm</p>
+      </div>
+      <div class="bg-white border border-warmgray p-8">
+        <div class="text-brass-500 text-xs uppercase tracking-widest mb-4">Email</div>
+        <a href="mailto:mark@mdchomeservices.com" class="text-navy-900 font-semibold break-all">mark@mdchomeservices.com</a>
+      </div>
+      <div class="bg-white border border-warmgray p-8">
+        <div class="text-brass-500 text-xs uppercase tracking-widest mb-4">Based in</div>
+        <p class="text-navy-900 font-semibold">Malvern, Pennsylvania</p>
+        <p class="text-muted text-sm mt-2">Serving the Main Line and the Jersey Shore (Ocean City, Sea Isle, Avalon, Stone Harbor)</p>
+      </div>
+      <div class="bg-cream border border-brass-500/40 p-8">
+        <div class="text-brass-600 text-xs uppercase tracking-widest mb-2">Home Care Plan</div>
+        <p class="text-ink text-sm leading-relaxed mb-4">Interested in the Home Care Plan? Mention it in your message and we'll bring the founding member paperwork to your walkthrough. First 25 members only.</p>
+        <a href="home-care-plan.html" class="text-navy-900 font-semibold border-b-2 border-brass-500 pb-1 text-sm">See the plan →</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="bg-ink text-cream/80">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+    <div>
+      <div class="font-serif text-2xl text-cream">MDC <span class="text-brass-500">Home Services</span></div>
+      <p class="mt-4 text-sm text-cream/60 leading-relaxed">Premium home care for the Main Line and the Jersey Shore. One team for your house, and your house at the Shore.</p>
+      <div class="mt-6 text-xs text-cream/50">PA HIC #PA151903 &nbsp;•&nbsp; NJ HIC #[LICENSE]</div>
+    </div>
+    <div>
+      <h4 class="font-semibold text-brass-500 uppercase text-xs tracking-widest mb-4">MDC</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="home-care-plan.html" class="hover:text-brass-500">Home Care Plan</a></li>
+        <li><a href="projects.html" class="hover:text-brass-500">The Work</a></li>
+        <li><a href="about.html" class="hover:text-brass-500">About</a></li>
+        <li><a href="contact.html" class="hover:text-brass-500">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-brass-500 uppercase text-xs tracking-widest mb-4">Service Areas</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Malvern &amp; Main Line, PA</li>
+        <li>Avalon, NJ</li>
+        <li>Stone Harbor, NJ</li>
+        <li>Sea Isle City, NJ</li>
+        <li>Ocean City, NJ</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-brass-500 uppercase text-xs tracking-widest mb-4">Contact</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="tel:4849191878" class="hover:text-brass-500">484-919-1878</a></li>
+        <li><a href="mailto:mark@mdchomeservices.com" class="hover:text-brass-500">mark@mdchomeservices.com</a></li>
+        <li>Malvern, PA</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10 py-6 text-center text-xs text-cream/50">
+    © 2026 MDC Home Services. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
