@@ -304,3 +304,30 @@ a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
 .bg-navy-900 a.bg-brass-500, .hero-bg a.bg-brass-500, .hero-bg-shore a.bg-brass-500, .hero-photo a.bg-brass-500, .bg-ink a.bg-brass-500 { background-color:#2F6B4D !important; }
 .bg-navy-900 a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .hero-photo a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
 .bg-navy-900 .bg-brass-500.text-navy-900, .hero-photo .bg-brass-500.text-navy-900 { background-color:#2F6B4D !important; color:#F8F5EF !important; }
+
+/* ============================================================
+   Light scheme: formerly-dark sections become light/airy.
+   Footer stays dark. Green accent preserved.
+   ============================================================ */
+.hero-photo, .hero-bg, .hero-bg-shore { background:#FCFAF6 !important; }
+.hero-photo::before { background:none !important; }
+.bg-navy-900 { background-color:#F6F2E9 !important; }
+.bg-navy-800 { background-color:#FFFFFF !important; border:0.5px solid #E8E2D4; }
+.bg-navy-700 { background-color:#EFE9DC !important; }
+.bg-ink { background-color:#141414 !important; }
+
+.hero-photo.text-cream, .hero-bg.text-cream, .bg-navy-900.text-cream, .bg-navy-800.text-cream { color:#23231F !important; }
+.hero-photo .text-cream, .hero-bg .text-cream, .hero-bg-shore .text-cream, .bg-navy-900 .text-cream, .bg-navy-800 .text-cream, .bg-navy-700 .text-cream { color:#23231F !important; }
+.hero-photo [class*="text-cream/"], .hero-bg [class*="text-cream/"], .hero-bg-shore [class*="text-cream/"], .bg-navy-900 [class*="text-cream/"], .bg-navy-800 [class*="text-cream/"], .bg-navy-700 [class*="text-cream/"] { color:#4A4540 !important; }
+
+.hero-photo .text-brass-400, .hero-photo .text-brass-500, .hero-photo .text-brass-600, .hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600, .bg-navy-800 .text-brass-500 { color:#1B4332 !important; }
+
+.hero-photo [class*="border-brass-500"], .bg-navy-900 [class*="border-brass-500"], .bg-navy-800 [class*="border-brass-500"] { border-color:#1B4332 !important; }
+.hero-photo .trust-badge-icon, .bg-navy-900 .trust-badge-icon { border-color:#1B4332 !important; color:#1B4332 !important; }
+
+.hero-photo a.bg-brass-500, .hero-bg a.bg-brass-500, .hero-bg-shore a.bg-brass-500, .bg-navy-900 a.bg-brass-500 { background-color:#1B4332 !important; color:#F8F5EF !important; }
+.hero-photo a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .bg-navy-900 a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#1B4332 !important; color:#F8F5EF !important; }
+
+.hero-photo [class*="border-cream/"], .hero-bg [class*="border-cream/"], .hero-bg-shore [class*="border-cream/"] { border-color:#C9C2B2 !important; }
+.bg-ink .bg-brass-500 { background-color:#2F6B4D !important; color:#F8F5EF !important; }
