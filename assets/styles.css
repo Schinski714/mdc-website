@@ -278,3 +278,29 @@ a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
 .bg-navy-900 a.bg-brass-500, .hero-bg a.bg-brass-500, .hero-bg-shore a.bg-brass-500, .hero-photo a.bg-brass-500, .bg-ink a.bg-brass-500 { background-color:#F8F5EF !important; }
 .bg-navy-900 a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .hero-photo a.bg-brass-500.text-navy-900 { color:#141414 !important; }
 .bg-navy-900 .bg-brass-500.text-navy-900, .hero-photo .bg-brass-500.text-navy-900 { background-color:#F8F5EF !important; color:#141414 !important; }
+
+/* ============================================================
+   Forest green accent (Pine #1B4332) over the B&W base.
+   Accent shows on eyebrows, rules, dividers, borders, buttons.
+   ============================================================ */
+.section-divider { background:#1B4332 !important; }
+.brass-line { background:#1B4332 !important; }
+.text-brass-400, .text-brass-500, .text-brass-600 { color:#1B4332 !important; }
+[class*="border-brass-500"] { border-color:#1B4332 !important; }
+a.bg-brass-500, .bg-brass-500 { background-color:#1B4332 !important; }
+a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
+.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#0F2E22 !important; }
+.trust-badge-icon { border-color:#1B4332 !important; color:#1B4332 !important; }
+
+/* dark sections: lighter green tint so the accent stays visible */
+.bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600,
+.bg-navy-800 .text-brass-400, .bg-navy-800 .text-brass-500, .bg-navy-800 .text-brass-600,
+.bg-ink .text-brass-500,
+.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .hero-photo .text-brass-500 { color:#7FAE95 !important; }
+.bg-navy-900 [class*="border-brass-500"], .hero-photo [class*="border-brass-500"], .bg-navy-800 [class*="border-brass-500"] { border-color:rgba(127,174,149,0.45) !important; }
+.bg-navy-900 .trust-badge-icon, .hero-photo .trust-badge-icon { border-color:#7FAE95 !important; color:#7FAE95 !important; }
+
+/* dark-section primary buttons: brighter green, cream text */
+.bg-navy-900 a.bg-brass-500, .hero-bg a.bg-brass-500, .hero-bg-shore a.bg-brass-500, .hero-photo a.bg-brass-500, .bg-ink a.bg-brass-500 { background-color:#2F6B4D !important; }
+.bg-navy-900 a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .hero-photo a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900, .hero-photo .bg-brass-500.text-navy-900 { background-color:#2F6B4D !important; color:#F8F5EF !important; }
