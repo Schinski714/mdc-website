@@ -355,3 +355,11 @@ a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
 
 .bg-ink .text-brass-500 { color:#C2603F !important; }
 .bg-ink .bg-brass-500 { background-color:#B5563A !important; color:#F8F5EF !important; }
+
+/* force terracotta on primary buttons (beat earlier green via higher specificity) */
+a.bg-brass-500.text-navy-900,
+.hero-photo a.bg-brass-500.text-navy-900,
+.hero-bg a.bg-brass-500.text-navy-900,
+.hero-bg-shore a.bg-brass-500.text-navy-900,
+.bg-navy-900 a.bg-brass-500.text-navy-900,
+.bg-ink a.bg-brass-500.text-navy-900 { background-color:#B5563A !important; color:#F8F5EF !important; }
