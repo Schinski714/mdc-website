@@ -331,3 +331,27 @@ a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
 
 .hero-photo [class*="border-cream/"], .hero-bg [class*="border-cream/"], .hero-bg-shore [class*="border-cream/"] { border-color:#C9C2B2 !important; }
 .bg-ink .bg-brass-500 { background-color:#2F6B4D !important; color:#F8F5EF !important; }
+
+/* ============================================================
+   Terracotta accent (#B5563A) — replaces the green accent.
+   ============================================================ */
+.section-divider { background:#B5563A !important; }
+.brass-line { background:#B5563A !important; }
+.text-brass-400, .text-brass-500, .text-brass-600 { color:#A24A2D !important; }
+[class*="border-brass-500"] { border-color:#B5563A !important; }
+a.bg-brass-500, .bg-brass-500 { background-color:#B5563A !important; }
+a.bg-brass-500.text-navy-900 { color:#F8F5EF !important; }
+.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#9C4A2C !important; }
+.trust-badge-icon { border-color:#B5563A !important; color:#B5563A !important; }
+
+.hero-photo .text-brass-400, .hero-photo .text-brass-500, .hero-photo .text-brass-600,
+.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500,
+.bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600,
+.bg-navy-800 .text-brass-500 { color:#A24A2D !important; }
+.hero-photo [class*="border-brass-500"], .bg-navy-900 [class*="border-brass-500"], .bg-navy-800 [class*="border-brass-500"] { border-color:#B5563A !important; }
+.hero-photo .trust-badge-icon, .bg-navy-900 .trust-badge-icon { border-color:#B5563A !important; color:#B5563A !important; }
+.hero-photo a.bg-brass-500, .hero-bg a.bg-brass-500, .hero-bg-shore a.bg-brass-500, .bg-navy-900 a.bg-brass-500 { background-color:#B5563A !important; color:#F8F5EF !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#B5563A !important; color:#F8F5EF !important; }
+
+.bg-ink .text-brass-500 { color:#C2603F !important; }
+.bg-ink .bg-brass-500 { background-color:#B5563A !important; color:#F8F5EF !important; }
