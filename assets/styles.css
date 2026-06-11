@@ -363,3 +363,31 @@ a.bg-brass-500.text-navy-900,
 .hero-bg-shore a.bg-brass-500.text-navy-900,
 .bg-navy-900 a.bg-brass-500.text-navy-900,
 .bg-ink a.bg-brass-500.text-navy-900 { background-color:#B5563A !important; color:#F8F5EF !important; }
+
+/* ============================================================
+   Ocean cerulean accent (#1E6F9B) — replaces terracotta.
+   ============================================================ */
+.section-divider { background:#1E6F9B !important; }
+.brass-line { background:#1E6F9B !important; }
+.text-brass-400, .text-brass-500, .text-brass-600 { color:#175A80 !important; }
+[class*="border-brass-500"] { border-color:#1E6F9B !important; }
+a.bg-brass-500, .bg-brass-500 { background-color:#1E6F9B !important; }
+.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#175A80 !important; }
+.trust-badge-icon { border-color:#1E6F9B !important; color:#1E6F9B !important; }
+
+.hero-photo .text-brass-400, .hero-photo .text-brass-500, .hero-photo .text-brass-600,
+.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500,
+.bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600,
+.bg-navy-800 .text-brass-500 { color:#175A80 !important; }
+.hero-photo [class*="border-brass-500"], .bg-navy-900 [class*="border-brass-500"], .bg-navy-800 [class*="border-brass-500"] { border-color:#1E6F9B !important; }
+.hero-photo .trust-badge-icon, .bg-navy-900 .trust-badge-icon { border-color:#1E6F9B !important; color:#1E6F9B !important; }
+
+a.bg-brass-500.text-navy-900,
+.hero-photo a.bg-brass-500.text-navy-900,
+.hero-bg a.bg-brass-500.text-navy-900,
+.hero-bg-shore a.bg-brass-500.text-navy-900,
+.bg-navy-900 a.bg-brass-500.text-navy-900,
+.bg-ink a.bg-brass-500.text-navy-900 { background-color:#1E6F9B !important; color:#F8F5EF !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#1E6F9B !important; color:#F8F5EF !important; }
+
+.bg-ink .text-brass-500 { color:#3A8CB8 !important; }
