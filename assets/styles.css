@@ -3,7 +3,7 @@
 
 :root {
   --char-900:#1A1816; --char-800:#262220; --char-700:#332E2B;
-  --rust:#B5563A; --rust-deep:#9C4A2C; --rust-dark:#8A3F28; --rust-light:#D9905F;
+  --rust:#6E8B57; --rust-deep:#51683F; --rust-dark:#586E44; --rust-light:#A0BA88;
   --cream:#F8F5EF; --warm-white:#FCFAF6; --ink:#141210; --muted:#4A4540; --warmgray:#E8E2D9;
 }
 
@@ -71,21 +71,21 @@ details[open] summary::after { content:'-'; }
 .border-navy-900 { border-color:#1A1816 !important; }
 
 /* rust accent on light sections */
-.text-brass-400, .text-brass-500, .text-brass-600 { color:#9C4A2C !important; }
-[class*="border-brass-500"] { border-color:#B5563A !important; }
-a.bg-brass-500, .bg-brass-500 { background-color:#B5563A !important; }
-.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#8A3F28 !important; }
-.trust-badge-icon { border-color:#B5563A !important; color:#B5563A !important; }
+.text-brass-400, .text-brass-500, .text-brass-600 { color:#51683F !important; }
+[class*="border-brass-500"] { border-color:#6E8B57 !important; }
+a.bg-brass-500, .bg-brass-500 { background-color:#6E8B57 !important; }
+.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#586E44 !important; }
+.trust-badge-icon { border-color:#6E8B57 !important; color:#6E8B57 !important; }
 
 /* rust accent on dark sections -> lighter tint for legibility */
 .bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600,
 .bg-navy-800 .text-brass-400, .bg-navy-800 .text-brass-500, .bg-navy-800 .text-brass-600,
 .bg-ink .text-brass-500,
-.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .hero-photo .text-brass-500 { color:#D9905F !important; }
-.bg-navy-900 .trust-badge-icon, .hero-photo .trust-badge-icon { border-color:#D9905F !important; color:#D9905F !important; }
+.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .hero-photo .text-brass-500 { color:#A0BA88 !important; }
+.bg-navy-900 .trust-badge-icon, .hero-photo .trust-badge-icon { border-color:#A0BA88 !important; color:#A0BA88 !important; }
 
 /* primary buttons -> rust with cream text (high specificity to win everywhere) */
 a.bg-brass-500.text-navy-900,
 .hero-photo a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .hero-bg-shore a.bg-brass-500.text-navy-900,
-.bg-navy-900 a.bg-brass-500.text-navy-900, .bg-ink a.bg-brass-500.text-navy-900 { background-color:#B5563A !important; color:#F8F5EF !important; }
-.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#B5563A !important; color:#F8F5EF !important; }
+.bg-navy-900 a.bg-brass-500.text-navy-900, .bg-ink a.bg-brass-500.text-navy-900 { background-color:#6E8B57 !important; color:#F8F5EF !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#6E8B57 !important; color:#F8F5EF !important; }
