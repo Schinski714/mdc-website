@@ -17,7 +17,7 @@ a { transition:color .2s ease, background-color .2s ease, border-color .2s ease;
 /* Dark heroes and feature sections */
 .hero-bg, .hero-bg-shore { background:linear-gradient(135deg, #1A1816 0%, #262220 100%); background-size:cover; background-position:center; }
 .hero-photo { position:relative; background:#1A1816; overflow:hidden; }
-.hero-photo::before { content:''; position:absolute; inset:0; background:linear-gradient(135deg, rgba(26,24,22,0.94) 0%, rgba(38,34,32,0.80) 100%); z-index:1; }
+.hero-photo::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg, rgba(20,18,16,0.90) 0%, rgba(20,18,16,0.74) 50%, rgba(20,18,16,0.40) 100%); z-index:1; }
 .hero-photo > * { position:relative; z-index:2; }
 .hero-photo-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
 
