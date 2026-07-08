@@ -1,91 +1,108 @@
-/* MDC Home Services — final stylesheet.
-   Warrior look: warm charcoal + cream, rust accent. One clean layer. */
+/* MDC Home Services — brand stylesheet. Navy #1B2F4A + gold accent + cream.
+   Recolors the whole site from one file; header restyled to dark navy with logo mark. */
 
 :root {
-  --char-900:#1A1816; --char-800:#262220; --char-700:#332E2B;
-  --rust:#6E8B57; --rust-deep:#51683F; --rust-dark:#586E44; --rust-light:#A0BA88;
-  --cream:#F8F5EF; --warm-white:#FCFAF6; --ink:#141210; --muted:#4A4540; --warmgray:#E8E2D9;
+  --navy:#1B2F4A; --navy-800:#24405F; --navy-700:#2E4E72; --ink:#142338;
+  --gold:#C29A43; --gold-deep:#94711E; --gold-light:#D8B65C;
+  --cream:#F8F5EF; --warm-white:#FCFAF6; --muted:#4A4540; --warmgray:#E8E2D9;
 }
 
 html { scroll-behavior:smooth; }
 body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
 .font-serif { font-family:'Playfair Display', Georgia, serif; }
 .font-sans { font-family:'DM Sans', system-ui, -apple-system, sans-serif; }
-
 a { transition:color .2s ease, background-color .2s ease, border-color .2s ease; }
 
-/* Dark heroes and feature sections */
-.hero-bg, .hero-bg-shore { background:linear-gradient(135deg, #1A1816 0%, #262220 100%); background-size:cover; background-position:center; }
-.hero-photo { position:relative; background:#1A1816; overflow:hidden; }
-.hero-photo::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg, rgba(20,18,16,0.90) 0%, rgba(20,18,16,0.74) 50%, rgba(20,18,16,0.40) 100%); z-index:1; }
+/* ===== Header: dark navy bar, white logo mark + wordmark ===== */
+header { background-color:var(--navy) !important; border-bottom-color:var(--gold) !important; }
+header a.font-serif {
+  color:var(--cream) !important; display:inline-flex; align-items:center;
+  font-family:'DM Sans', system-ui, sans-serif !important;
+  text-transform:uppercase; letter-spacing:.13em; font-weight:600; font-size:1.02rem; white-space:nowrap;
+}
+header a.font-serif > span { color:var(--cream) !important; font-weight:600; }
+header .desktop-nav a { color:#DCE3EC !important; }
+header .desktop-nav a:hover { color:var(--gold-light) !important; }
+header a.bg-navy-900 { background-color:var(--gold) !important; color:var(--navy) !important; }
+header a.bg-navy-900:hover { background-color:#B0862F !important; }
+header .mobile-nav-toggle { color:var(--cream) !important; }
+#mobile-menu a { color:var(--navy) !important; }
+
+/* ===== Dark heroes and feature sections ===== */
+.hero-bg, .hero-bg-shore { background:linear-gradient(135deg, #1B2F4A 0%, #24405F 100%); background-size:cover; background-position:center; }
+.hero-photo { position:relative; background:#1B2F4A; overflow:hidden; }
+.hero-photo::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg, rgba(20,32,52,0.92) 0%, rgba(20,32,52,0.75) 50%, rgba(20,32,52,0.40) 100%); z-index:1; }
 .hero-photo > * { position:relative; z-index:2; }
 .hero-photo-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
 
-.section-divider { width:54px; height:4px; background:var(--rust); margin-bottom:1.5rem; }
-.brass-line { height:2px; background:var(--rust); }
+.section-divider { width:54px; height:4px; background:var(--gold); margin-bottom:1.5rem; }
+.brass-line { height:2px; background:var(--gold); }
 
 .service-card { transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
-.service-card:hover { transform:translateY(-4px); box-shadow:0 20px 40px -15px rgba(26,24,22,0.30); border-color:var(--rust); }
+.service-card:hover { transform:translateY(-4px); box-shadow:0 20px 40px -15px rgba(20,32,52,0.30); border-color:var(--gold); }
 
 .photo-placeholder { background:linear-gradient(135deg, #E8E2D9 0%, #D5CEC3 100%); display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:.75rem; text-transform:uppercase; letter-spacing:.1em; min-height:280px; }
 .photo-placeholder-tall { min-height:400px; }
 .photo-placeholder-short { min-height:200px; }
 
 .gallery-card { position:relative; overflow:hidden; cursor:pointer; }
-.gallery-card .gallery-overlay { position:absolute; inset:0; background:linear-gradient(0deg, rgba(26,24,22,0.85) 0%, rgba(26,24,22,0.20) 50%, transparent 100%); display:flex; flex-direction:column; justify-content:flex-end; padding:1.5rem; transition:background .3s ease; }
-.gallery-card:hover .gallery-overlay { background:linear-gradient(0deg, rgba(26,24,22,0.90) 0%, rgba(26,24,22,0.40) 60%, rgba(26,24,22,0.15) 100%); }
+.gallery-card .gallery-overlay { position:absolute; inset:0; background:linear-gradient(0deg, rgba(20,32,52,0.85) 0%, rgba(20,32,52,0.20) 50%, transparent 100%); display:flex; flex-direction:column; justify-content:flex-end; padding:1.5rem; transition:background .3s ease; }
+.gallery-card:hover .gallery-overlay { background:linear-gradient(0deg, rgba(20,32,52,0.90) 0%, rgba(20,32,52,0.40) 60%, rgba(20,32,52,0.15) 100%); }
 
 .team-card { transition:transform .3s ease; }
 .team-card:hover { transform:translateY(-2px); }
 
 .trust-badge { display:flex; flex-direction:column; align-items:center; text-align:center; padding:1rem; }
-.trust-badge-icon { width:48px; height:48px; border:2px solid var(--rust); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:.75rem; color:var(--rust); }
+.trust-badge-icon { width:48px; height:48px; border:2px solid var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:.75rem; color:var(--gold-deep); }
 
 .stat-block { text-align:center; padding:2rem 1rem; }
-.stat-number { font-family:'Playfair Display', Georgia, serif; font-size:3.5rem; font-weight:600; line-height:1; color:var(--char-900); }
+.stat-number { font-family:'Playfair Display', Georgia, serif; font-size:3.5rem; font-weight:600; line-height:1; color:#1B2F4A; }
 
 .ba-container { position:relative; overflow:hidden; background:var(--warmgray); }
 
 input, textarea, select { font-family:inherit; border-radius:4px; }
-input:focus, textarea:focus, select:focus { outline:2px solid var(--rust); outline-offset:2px; }
+input:focus, textarea:focus, select:focus { outline:2px solid var(--gold); outline-offset:2px; }
 
 details summary { list-style:none; position:relative; padding-right:2rem; cursor:pointer; }
 details summary::-webkit-details-marker { display:none; }
-details summary::after { content:'+'; position:absolute; right:0; top:50%; transform:translateY(-50%); font-size:1.5rem; color:var(--rust); font-weight:300; }
+details summary::after { content:'+'; position:absolute; right:0; top:50%; transform:translateY(-50%); font-size:1.5rem; color:var(--gold); font-weight:300; }
 details[open] summary::after { content:'-'; }
 
 #mobile-menu { display:none; }
 #mobile-menu.open { display:block; }
 @media (max-width:1023px) { .desktop-nav { display:none; } }
 @media (min-width:1024px) { .mobile-nav-toggle { display:none; } }
-@media (max-width:767px) { .photo-placeholder { min-height:200px; } .photo-placeholder-tall { min-height:260px; } .stat-number { font-size:2.5rem; } }
+@media (max-width:767px) {
+  .photo-placeholder { min-height:200px; } .photo-placeholder-tall { min-height:260px; } .stat-number { font-size:2.5rem; }
+  header a.font-serif { font-size:.9rem; letter-spacing:.1em; }
+}
 @media print { header, footer, .no-print { display:none; } }
 
-/* ===== Warrior palette: remap the navy/brass Tailwind tokens ===== */
-.bg-navy-900 { background-color:#1A1816 !important; }
-.bg-navy-800 { background-color:#262220 !important; }
-.bg-navy-700 { background-color:#332E2B !important; }
-.bg-ink { background-color:#141210 !important; }
-.text-navy-900 { color:#1A1816 !important; }
-.text-navy-800 { color:#262220 !important; }
-.border-navy-900 { border-color:#1A1816 !important; }
+/* ===== Navy palette: remap the navy/brass Tailwind tokens ===== */
+.bg-navy-900 { background-color:#1B2F4A !important; }
+.bg-navy-800 { background-color:#24405F !important; }
+.bg-navy-700 { background-color:#2E4E72 !important; }
+.bg-ink { background-color:#142338 !important; }
+.text-navy-900 { color:#1B2F4A !important; }
+.text-navy-800 { color:#24405F !important; }
+.border-navy-900 { border-color:#1B2F4A !important; }
 
-/* rust accent on light sections */
-.text-brass-400, .text-brass-500, .text-brass-600 { color:#51683F !important; }
-[class*="border-brass-500"] { border-color:#6E8B57 !important; }
-a.bg-brass-500, .bg-brass-500 { background-color:#6E8B57 !important; }
-.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#586E44 !important; }
-.trust-badge-icon { border-color:#6E8B57 !important; color:#6E8B57 !important; }
+/* gold accent on light sections */
+.text-brass-400, .text-brass-500, .text-brass-600 { color:#94711E !important; }
+[class*="border-brass-500"] { border-color:#C29A43 !important; }
+[class*="decoration-brass"] { text-decoration-color:#C29A43 !important; }
+a.bg-brass-500, .bg-brass-500 { background-color:#C29A43 !important; }
+.hover\:bg-brass-600:hover, .hover\:bg-brass-500:hover { background-color:#B0862F !important; }
 
-/* rust accent on dark sections -> lighter tint for legibility */
+/* gold accent on dark sections -> brighter tint for legibility */
 .bg-navy-900 .text-brass-400, .bg-navy-900 .text-brass-500, .bg-navy-900 .text-brass-600,
 .bg-navy-800 .text-brass-400, .bg-navy-800 .text-brass-500, .bg-navy-800 .text-brass-600,
 .bg-ink .text-brass-500,
-.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .hero-photo .text-brass-500 { color:#A0BA88 !important; }
-.bg-navy-900 .trust-badge-icon, .hero-photo .trust-badge-icon { border-color:#A0BA88 !important; color:#A0BA88 !important; }
+.hero-bg .text-brass-500, .hero-bg-shore .text-brass-500, .hero-photo .text-brass-500 { color:#D8B65C !important; }
+.bg-navy-900 .trust-badge-icon, .hero-photo .trust-badge-icon { border-color:#D8B65C !important; color:#D8B65C !important; }
 
-/* primary buttons -> rust with cream text (high specificity to win everywhere) */
+/* primary buttons -> gold with navy text (high specificity to win everywhere) */
 a.bg-brass-500.text-navy-900,
 .hero-photo a.bg-brass-500.text-navy-900, .hero-bg a.bg-brass-500.text-navy-900, .hero-bg-shore a.bg-brass-500.text-navy-900,
-.bg-navy-900 a.bg-brass-500.text-navy-900, .bg-ink a.bg-brass-500.text-navy-900 { background-color:#6E8B57 !important; color:#F8F5EF !important; }
-.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#6E8B57 !important; color:#F8F5EF !important; }
+.bg-navy-900 a.bg-brass-500.text-navy-900, .bg-ink a.bg-brass-500.text-navy-900 { background-color:#C29A43 !important; color:#1B2F4A !important; }
+.bg-navy-900 .bg-brass-500.text-navy-900 { background-color:#C29A43 !important; color:#1B2F4A !important; }
