@@ -16,7 +16,7 @@ a { transition:color .2s ease, background-color .2s ease, border-color .2s ease;
 /* ===== Header: dark navy bar, white logo mark + wordmark ===== */
 header { background-color:var(--navy) !important; border-bottom-color:var(--gold) !important; }
 header a.font-serif {
-  color:var(--cream) !important; display:inline-flex; align-items:center;
+  color:var(--cream) !important; display:inline-block; word-spacing:.14em;
   font-family:'DM Sans', system-ui, sans-serif !important;
   text-transform:uppercase; letter-spacing:.13em; font-weight:600; font-size:1.02rem; white-space:nowrap;
 }
